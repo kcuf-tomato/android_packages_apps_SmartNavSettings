@@ -19,11 +19,10 @@
 
 package com.android.settings.smartnav;
 
-import com.android.internal.utils.ActionHandler;
-import com.android.internal.utils.ActionUtils;
-import com.android.internal.utils.Config.ActionConfig;
-import com.android.settings.R;
-import com.android.settings.smartnav.CustomActionListAdapter;
+import com.android.internal.util.hwkeys.ActionHandler; 
+import com.android.internal.util.hwkeys.ActionUtils; 
+import com.android.internal.util.hwkeys.Config.ActionConfig; 
+import com.android.settings.R; import com.android.settings.smartnav.CustomActionListAdapter;
 import com.android.settings.smartnav.ShortcutPickHelper;
 
 import android.app.Activity;

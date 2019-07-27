@@ -41,7 +41,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
-import com.bootleggers.dumpster.preferences.CustomSeekBarPreference;
+import com.stag.horns.preferences.CustomSeekBarPreference;
 
 public class PulseSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -391,6 +391,6 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BOOTLEG;
+        return MetricsProto.MetricsEvent.HORNS;
     }
 }

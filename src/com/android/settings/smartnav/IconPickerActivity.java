@@ -26,8 +26,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.android.internal.utils.ActionHandler;
-import com.android.internal.utils.ActionUtils;
+
+import com.android.internal.util.hwkeys.ActionHandler;
+import com.android.internal.util.hwkeys.ActionUtils;
 import com.android.settings.R;
 
 import android.app.Activity;

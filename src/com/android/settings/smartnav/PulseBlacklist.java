@@ -40,8 +40,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 
-import com.bootleggers.dumpster.preferences.PackageListAdapter;
-import com.bootleggers.dumpster.preferences.PackageListAdapter.PackageItem;
+import com.stag.horns.preferences.PackageListAdapter;
+import com.stag.horns.preferences.PackageListAdapter.PackageItem;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -101,7 +101,7 @@ public class PulseBlacklist extends SettingsPreferenceFragment implements
     public int getDialogMetricsCategory(int dialogId) {
         switch (dialogId) {
             case DIALOG_BLACKLIST_APPS:
-                return MetricsProto.MetricsEvent.BOOTLEG;
+                return MetricsProto.MetricsEvent.HORNS;
             default:
                 return 0;
         }
@@ -125,7 +125,7 @@ public class PulseBlacklist extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BOOTLEG;
+        return MetricsProto.MetricsEvent.HORNS;
     }
 
     @Override

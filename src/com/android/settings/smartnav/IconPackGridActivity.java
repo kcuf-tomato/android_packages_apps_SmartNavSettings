@@ -33,7 +33,7 @@ import java.util.Set;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
-import com.android.internal.utils.ActionUtils;
+import com.android.internal.util.hwkeys.ActionUtils;
 import com.android.settings.R;
 
 import android.app.Activity;

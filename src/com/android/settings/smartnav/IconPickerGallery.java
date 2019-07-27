@@ -19,9 +19,9 @@ package com.android.settings.smartnav;
 
 import java.io.File;
 
-import com.android.internal.utils.ActionHandler;
-import com.android.internal.utils.ActionUtils;
-import com.android.internal.utils.ImageHelper;
+import com.android.internal.util.hwkeys.ActionHandler; 
+import com.android.internal.util.hwkeys.ActionUtils;
+import com.android.internal.util.hwkeys.ImageHelper;
 
 import android.app.Activity;
 import android.content.Intent;

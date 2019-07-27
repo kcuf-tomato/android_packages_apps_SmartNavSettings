@@ -32,15 +32,15 @@ import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
-import com.bootleggers.dumpster.preferences.CustomSeekBarPreference;
-import com.bootleggers.dumpster.preferences.SystemSettingSwitchPreference;
+import com.stag.horns.preferences.CustomSeekBarPreference;
+import com.stag.horns.preferences.SystemSettingSwitchPreference;
 
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.utils.ActionConstants;
-import com.android.internal.utils.Config;
-import com.android.internal.utils.ActionUtils;
-import com.android.internal.utils.Config.ButtonConfig;
+import com.android.settings.SettingsPreferenceFragment; 
+import com.android.internal.logging.nano.MetricsProto; 
+import com.android.internal.util.hwkeys.ActionConstants; 
+import com.android.internal.util.hwkeys.Config; 
+import com.android.internal.util.hwkeys.ActionUtils; 
+import com.android.internal.util.hwkeys.Config.ButtonConfig;
 import com.android.settings.R;
 
 public class NavigationBarSettings extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
@@ -206,6 +206,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BOOTLEG;
+        return MetricsProto.MetricsEvent.HORNS;
     }
 }

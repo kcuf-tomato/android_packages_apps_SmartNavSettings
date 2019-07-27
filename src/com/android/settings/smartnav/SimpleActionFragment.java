@@ -25,11 +25,11 @@ package com.android.settings.smartnav;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.android.internal.utils.ActionHandler;
-import com.android.internal.utils.Config;
-import com.android.internal.utils.ActionConstants.Defaults;
-import com.android.internal.utils.Config.ActionConfig;
-import com.android.internal.utils.Config.ButtonConfig;
+import com.android.internal.util.hwkeys.ActionHandler;
+import com.android.internal.util.hwkeys.Config;
+import com.android.internal.util.hwkeys.ActionConstants.Defaults;
+import com.android.internal.util.hwkeys.Config.ActionConfig;
+import com.android.internal.util.hwkeys.Config.ButtonConfig;
 
 import android.content.Context;
 import android.os.UserHandle;

@@ -23,12 +23,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.utils.ActionConstants.Defaults;
-import com.android.internal.utils.ActionHandler;
-import com.android.internal.utils.Config;
-import com.android.internal.utils.Config.ActionConfig;
-import com.android.internal.utils.Config.ButtonConfig;
+import com.android.internal.logging.nano.MetricsProto; 
+import com.android.internal.util.hwkeys.ActionConstants.Defaults; 
+import com.android.internal.util.hwkeys.ActionHandler; 
+import com.android.internal.util.hwkeys.Config; 
+import com.android.internal.util.hwkeys.Config.ActionConfig;
+import com.android.internal.util.hwkeys.Config.ButtonConfig;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -174,7 +174,7 @@ public class ActionFragment extends SettingsPreferenceFragment implements
         switch (dialogId) {
             case DIALOG_CATEGORY:
             case DIALOG_CUSTOM_ACTIONS:
-                return MetricsEvent.BOOTLEG;
+                return MetricsEvent.HORNS;
             default:
                 return 0;
         }
@@ -280,6 +280,6 @@ public class ActionFragment extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BOOTLEG;
+        return MetricsProto.MetricsEvent.HORNS;
     }
 }

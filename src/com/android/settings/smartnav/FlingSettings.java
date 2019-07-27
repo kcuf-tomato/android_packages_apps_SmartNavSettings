@@ -23,15 +23,14 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
-import com.bootleggers.dumpster.preferences.CustomSeekBarPreference;
+import com.stag.horns.preferences.CustomSeekBarPreference;
 
-import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.utils.ActionConstants;
-import com.android.internal.utils.ActionHandler;
-import com.android.internal.utils.ActionUtils;
-import com.android.internal.utils.Config.ButtonConfig;
-import com.android.settings.R;
-import com.android.settings.smartnav.ActionPreference;
+import com.android.internal.logging.nano.MetricsProto; 
+import com.android.internal.util.hwkeys.ActionConstants; 
+import com.android.internal.util.hwkeys.ActionHandler; 
+import com.android.internal.util.hwkeys.ActionUtils; 
+import com.android.internal.util.hwkeys.Config.ButtonConfig; 
+import com.android.settings.R; import com.android.settings.smartnav.ActionPreference; 
 import com.android.settings.smartnav.IconPickHelper;
 import com.android.settings.smartnav.IconPickHelper.OnPickListener;
 
@@ -324,7 +323,7 @@ public class FlingSettings extends ActionFragment implements
             case DIALOG_RESET_CONFIRM:
             case DIALOG_RESTORE_PROFILE:
             case DIALOG_SAVE_PROFILE:
-                return MetricsProto.MetricsEvent.BOOTLEG;
+                return MetricsProto.MetricsEvent.HORNS;
             default:
                 return super.getDialogMetricsCategory(dialogId);
         }
@@ -713,6 +712,6 @@ public class FlingSettings extends ActionFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BOOTLEG;
+        return MetricsProto.MetricsEvent.HORNS;
     }
 }

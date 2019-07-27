@@ -21,7 +21,7 @@ package com.android.settings.smartnav;
 
 import java.io.File;
 
-import com.android.internal.utils.ImageHelper;
+import com.android.internal.util.hwkeys.ImageHelper;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -32,7 +32,7 @@ import android.os.Environment;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.android.internal.utils.ActionUtils;
+import com.android.internal.util.hwkeys.ActionUtils;
 import com.android.settings.R;
 
 public class IconPickHelper {

@@ -47,16 +47,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.utils.ActionConstants;
-import com.android.internal.utils.ActionHandler;
-import com.android.internal.utils.ActionUtils;
-import com.android.internal.utils.Config;
-import com.android.internal.utils.Config.ButtonConfig;
+import com.android.internal.logging.nano.MetricsProto; 
+import com.android.internal.util.hwkeys.ActionConstants; 
+import com.android.internal.util.hwkeys.ActionHandler; 
+import com.android.internal.util.hwkeys.ActionUtils; 
+import com.android.internal.util.hwkeys.Config;
+import com.android.internal.util.hwkeys.Config.ButtonConfig;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.bootleggers.dumpster.preferences.CustomSeekBarPreference;
+import com.stag.horns.preferences.CustomSeekBarPreference;
 
 public class SmartbarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -215,7 +215,7 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
             case DIALOG_RESET_CONFIRM:
             case DIALOG_RESTORE_PROFILE:
             case DIALOG_SAVE_PROFILE:
-                return MetricsProto.MetricsEvent.BOOTLEG;
+                return MetricsProto.MetricsEvent.HORNS;
             default:
                 return 0;
         }
@@ -447,6 +447,6 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BOOTLEG;
+        return MetricsProto.MetricsEvent.HORNS;
     }
 }
